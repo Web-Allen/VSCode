@@ -37,6 +37,16 @@ ul{
     list-style: none;
 }
 
+p{  
+    line-height: 1.5em;
+    margin-top: 0;
+}
+
+h3{
+    margin-top: 9em;
+    margin-bottom: 3px;
+}
+
 a:link{
     color: #242424;
     text-decoration: none;
@@ -46,7 +56,7 @@ a:visited{
     color: #242424;
 }
 
-.clearfix{
+.clearfix::before{
     content: "";
     display: block;
     clear: both;
@@ -55,17 +65,21 @@ a:visited{
 .content-left{
     width: 230px;
     float: left;
+    margin: 16px 0 0 -10px;
 }
 
 .content-left img{
     width: 50px;
     height: 50px;
     vertical-align: middle;
+    margin-right: 8px;
 }
 
 .content-left li{
     width: 180px;
     height: 50px;
+    line-height: 50px;
+    font-weight: bold;
     border: 1px solid #ccc;
     border-radius: 3px;
     padding: 6px 0 6px 12px;
@@ -82,10 +96,14 @@ a:visited{
 .content-right{
     width: 650px;
     float: right;
+    margin:32px 16px 0 0;
 }
 
 .vocab{
-
+    background-color: #f4fdff;
+    border-bottom: 2px solid #84cbff;
+    padding: 5px 288px 5px 4px;
+    margin:24px 0 18px 0px;
 }
 
 .typing{
@@ -107,6 +125,18 @@ a:visited{
 
 .vocab-right{
     float: right;
+    margin-right: 36px;
+}
+
+.vocab-right h4{
+    margin-top: 5px;
+}
+
+.menu{
+    background-color: #f4fdff;
+    border-bottom: 2px solid #84cbff;
+    padding: 5px 288px 5px 4px;
+    margin-top: 24px;
 }
 
 .owl{
@@ -115,10 +145,30 @@ a:visited{
     vertical-align: text-bottom;
 }
 
-.list-left{
-float: left;
+.list-left,.list-right{
+    float: left;
+    padding-left: 0;
 }
 
-.list-right{
-    float: right;
+.list-left li,.list-right li{
+    line-height: 2em;
+}
+
+.list-right li{
+    text-indent: 102px;
+}
+
+.ft1{
+    color: #3abc27;
+}
+
+.ft2{
+    color: #0077ce;
+}
+
+.article{
+    background-color: #f4fdff;
+    border-bottom: 2px solid #84cbff;
+    padding: 5px 288px 5px 4px;
+    margin-top: 6px;
 }
