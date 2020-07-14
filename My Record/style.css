@@ -1,0 +1,134 @@
+body{
+    background-color: #d5d5d5;
+    padding-top: 60px;
+}
+
+.header{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.fa-d-and-d{
+    font-size: 40px;
+}
+
+.MR{
+    font-family: Script;
+    font-weight: bold;
+    user-select: none;
+    margin-bottom: 0;
+}
+
+.H-L a:link{
+    padding: 13px 8px;
+}
+
+.H-L a:hover{
+    color: white !important;
+    background-color: black;
+}
+
+.left-col-title{
+    font-size: 20px;
+    font-weight: bold;
+    user-select: none;
+    background-color: #007bff !important;
+    padding: 6px 15px;
+    margin: 0 -15px;
+    border-radius: 0 36px 0 0;
+}
+
+.left-col .list-group-item{
+    width: auto;
+    font-size: 14px;
+    border: 1px solid rgba(0,0,0,.125);
+    padding: 6px 15px;
+    margin: 0 -15px;
+    border-radius: 0;
+}
+
+/* .left-col a:hover li{
+    background-color: #c0d1ff;
+    border: 1px solid #6d7993;
+} */
+
+.left-col a:hover{
+/*     background-color: #c0d1ff;
+    border: 1px solid #6d7993; */
+    background-color: #007bff3f;
+    border: 1px solid #007bff;
+}
+
+.left-col .active{
+    font-weight: bold;
+    background-color: #007bff36;
+    border: 1px solid #007bff;
+}
+
+.left-col a:link, .right-col a:link{
+    color: #000;
+    text-decoration: none;
+}
+
+.right-col{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.right-col img{
+    width: 24px;
+    height: 24px;
+    vertical-align:text-top;
+}
+
+.right-col-title{
+    font-size: 20px;
+    font-weight: bold;
+    user-select: none;
+    background-color: #96858f !important;
+    padding: 6px 0 6px 20px;
+    margin-bottom: 0;
+    border-radius: 36px 0 0 0;
+}
+
+.right-col a:hover{
+    background-color: #f7d4e85e;
+    border: 1px solid  #96858f;
+}
+
+.right-col .list-group-item{
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 0;
+}
+
+.main-text{
+    font-size: 18px;
+}
+
+.main-title{
+padding: 6px 20px 6px 0;
+}
+
+.main article{
+    border-radius: 0;
+}
+
+.T-C{
+    color: rgb(86, 156, 214);/* Tags color */
+}
+
+.S-C{
+    color: rgb(156, 220, 254);/* Selectors color */
+}
+
+.C{
+    color: rgb(206, 145, 120);/* Content */
+}
+
+.A-B{
+    color: rgb(109, 122, 128);/* Angle brackets */
+}
+
+pre{
+    white-space: pre-wrap;
+}

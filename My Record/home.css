@@ -1,0 +1,221 @@
+/* ▼———————— Reset CSS ————————▼ */ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    color: #dfe6e9;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body{
+    line-height: 1;
+/*     background-color: #d5d5d5; */
+    background-image: url(bg-main.png);
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+a {
+    text-decoration: none;
+}
+/* ▲———————— Reset CSS ————————▲ */
+
+#Container-Grid {
+    display: grid;
+    grid-template-rows: 40px auto;
+    grid-template-columns: 200px auto;
+    grid-gap: 15px;
+    grid-template-areas: "n n"
+                         "a m";
+}
+
+/* ▼———————— The nav ————————▼ */ 
+#Container-Grid > nav {
+    display: flex;
+    align-items: center;
+    grid-area: n;
+} 
+
+.logo {
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+#nav-title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Script" , "Arial" , "Helvetica";
+    user-select: none;
+    margin: 0 30px 0 0;
+}
+/* ▲———————— The nav end ————————▲ */
+
+/* ▼———————— The aside ————————▼ */
+#Container-Grid > aside {
+    display: flex;
+    height: 442px;
+    flex-direction: column;
+    grid-area: a;
+    margin-left: 15px;
+    border-radius: 6px;
+}
+
+#aside-title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 6px 15px;
+    background-color: #252323;
+    border-radius: 6px 6px 0 0;
+    cursor: pointer;
+}
+
+.aside-ul li:nth-child(odd) {
+    background-color: #9a9d9a2c;
+}
+
+.aside-ul li:nth-child(n+3) {
+    cursor: not-allowed;
+    user-select: none;
+    opacity: 0.3;
+}
+
+.aside-ul li {
+    cursor: pointer;
+    padding: 12px 15px;
+}
+
+.fa-bars, .fa-seedling {
+    margin-right: 6px;
+}
+/* ▲———————— The aside end ————————▲ */
+
+/* ▼———————— The main ————————▼ */
+#Container-Grid > main {
+    display: flex;
+    height: min-content;
+    flex-direction: column;
+    grid-area: m;
+    margin-right: 15px;
+    border-radius: 6px;
+    padding: 15px 20px 20px;
+    margin-bottom: 15px;
+}
+
+.fa-list {
+    margin-right: 6px;
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 20px;
+    border-bottom: 1px solid white;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+}
+
+.Container-Flex {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.Container-Flex h3 {
+    color: #55efc4;
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 36px;
+    margin-bottom: 10px;
+}
+
+.Container-Flex a {
+    display: block;
+    width: 29.6%;
+    background-color: #9a9d9a2c;
+    font-size: 14px;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    padding: 16px 12px;
+    margin-bottom: 15px;
+}
+
+.Container-Flex img {
+    float: left;
+    margin-right: 10px;
+}
+
+.Container-Flex a:hover {
+    border: 2px solid #5b9ef0;
+}
+
+/* ▼———————— The RWD ————————▼ */
+@media (max-width: 1200px) { 
+    .Container-Flex a {
+        width: 45%;
+    }
+}
+
+@media (max-width: 992px) { 
+    .Container-Flex a {
+        width: 100%;
+    }
+}
+/* ▲———————— The RWD end ————————▲ */
+/* ▲———————— The main end ————————▲ */
+
+.bg-color {
+    background-color: #343a40;
+}
+
+.test1 {
+    margin: 0 20px 0 auto;
+}
+.test2 {
+    width: 300px;
+    position: absolute;
+    right: 40%;
+    top: 25%;
+    display: none;
+    border: 1px solid red;
+    background-color: white;
+
+}
+
+
+.bg{
+    display: flex;
+}
