@@ -82,6 +82,51 @@ a {
     user-select: none;
     margin-right: 25px;
 }
+
+/* ▼———————— The nav-link ————————▼ */ 
+.nav-link {
+    cursor: pointer;
+    margin: 0 20px 0 auto;
+}
+
+.other-sites {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 300px;
+    top: 40px;
+    right: 15px;
+    border: 1px solid black;
+    border-radius: 6px;
+    padding: 20px 0;
+}
+
+.other-sites a{
+    display: block;
+    color: black;
+    text-align: center;
+    border-radius: 6px;
+    padding: 6px 0;
+}
+
+.other-sites img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 6px;
+}
+
+.other-sites div{
+    display: grid; 
+    grid-template-columns: repeat(3, 25%);
+    justify-content: center;
+    gap: 20px;
+}
+
+.other-sites a:hover {
+    background-color: #F6FAFE;
+}
+/* ▲———————— The nav-link end ————————▲ */
 /* ▲———————— The nav end ————————▲ */
 
 /* ▼———————— The aside ————————▼ */
@@ -144,7 +189,7 @@ a {
     font-size: 20px;
     border-bottom: 1px solid white;
     padding-bottom: 6px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .Container-Flex {
@@ -198,17 +243,4 @@ a {
 
 .bg-color {
     background-color: #343a40;
-}
-
-.test1 {
-    margin: 0 20px 0 auto;
-}
-.test2 {
-    width: 300px;
-    position: absolute;
-    right: 40%;
-    top: 25%;
-    display: none;
-    border: 1px solid red;
-    background-color: white;
 }
