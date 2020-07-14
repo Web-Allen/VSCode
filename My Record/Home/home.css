@@ -29,7 +29,6 @@ footer, header, hgroup, menu, nav, section {
 
 body{
     line-height: 1;
-/*     background-color: #d5d5d5; */
     background-image: url(../image/bg-main.png);
 }
 
@@ -73,7 +72,6 @@ a {
 
 .logo {
     margin: 0 15px;
-    font-size: 20px;
 }
 
 #nav-title {
@@ -81,7 +79,7 @@ a {
     font-weight: bold;
     font-family: "Script" , "Arial" , "Helvetica";
     user-select: none;
-    margin: 0 30px 0 0;
+    margin-right: 25px;
 }
 /* ▲———————— The nav end ————————▲ */
 
