@@ -209,6 +209,7 @@ a {
 
 .section-grid a {
     display: block;
+    text-align: center;
     background-color: #9a9d9a2c;
     border: 2px solid transparent;
     border-radius: 6px;
