@@ -58,7 +58,7 @@ a {
     display: grid;
     width: 100%;
     grid-template-rows: 40px auto;
-    grid-template-columns: 162px auto;
+    grid-template-columns: minmax(162px, 15vw) auto;
     grid-gap: 15px;
     grid-template-areas: "n n"
                          "a m";
@@ -67,6 +67,7 @@ a {
 /* ▼———————— The nav ————————▼ */ 
 #Container-Grid > nav {
     display: flex;
+    font-size: 1rem;
     align-items: center;
     grid-area: n;
 } 
