@@ -29,7 +29,7 @@ footer, header, hgroup, menu, nav, section {
 
 body{
     line-height: 1;
-    background-image: url(../image/bg-main.png);
+    background-image: url(https://raw.githubusercontent.com/Web-Allen/VSCode/master/My%20Record/image/bg-main.png);
 }
 
 ol, ul {
@@ -225,7 +225,7 @@ a {
 }
 
 /* ▼———————— The RWD ————————▼ */
-@media (max-width: 1200px) { 
+@media (max-width: 992px) { 
     .section-grid {
         grid-template-columns: repeat(2, 1fr);
     }

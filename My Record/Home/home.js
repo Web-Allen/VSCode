@@ -14,10 +14,9 @@ $(document).ready(function(){
     });
 
     $(document).click(function(event){
-        var _con = $('.nav-link');   // 設置目標區域
-        if(!_con.is(event.target) && _con.has(event.target).length === 0){ // Mark 1
-          //$('#divTop').slideUp('slow');   //滑動消失
-          $('.other-sites').hide();         //淡出消失
+        var _con = $('.nav-link');      //設置目標區域
+        if(!_con.is(event.target) && _con.has(event.target).length === 0){
+        $('.other-sites').hide();       //淡出消失
         }
     });
 });
