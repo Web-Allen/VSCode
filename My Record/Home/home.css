@@ -64,8 +64,11 @@ a {
                          "a m";
 }
 
+.bg-color {
+    background-color: #343a40;
+}
 /* ▼———————— The nav ————————▼ */ 
-#Container-Grid > nav {
+.nav-header {
     display: flex;
     font-size: 1rem;
     align-items: center;
@@ -81,7 +84,16 @@ a {
     font-weight: bold;
     font-family: "Script" , "Arial" , "Helvetica";
     user-select: none;
-    margin-right: 25px;
+    margin-right: 10px;
+}
+
+.nav-header a {
+    padding: 12px;
+}
+
+.nav-header > a:hover {
+    border-radius: 6px;
+    box-shadow: inset 0 0 1.5rem #636e72;
 }
 
 /* ▼———————— The nav-link ————————▼ */ 
@@ -240,6 +252,3 @@ a {
 /* ▲———————— The RWD end ————————▲ */
 /* ▲———————— The main end ————————▲ */
 
-.bg-color {
-    background-color: #343a40;
-}

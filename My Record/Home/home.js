@@ -1,3 +1,4 @@
+//▼———————— The Home ————————▼
 $(document).ready(function(){
     $('#aside-title').click(function(){
         $('.items-all').show();
@@ -20,3 +21,4 @@ $(document).ready(function(){
         }
     });
 });
+//▲———————— The Home end ————————▲
