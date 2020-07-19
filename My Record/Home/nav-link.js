@@ -1,4 +1,4 @@
-document.write("            <div class=\"nav-link\"><i class=\"fas fa-th fa-lg\"><\/i><\/div>");
+document.write("            <div class=\"nav-link-2\"><i class=\"fas fa-th fa-lg\"><\/i><\/div>");
 document.write("            <div class=\"other-sites\">");
 document.write("                <div>");
 document.write("                    <a href=\"https:\/\/www.imooc.com\/\" target=\"_blank\"><img src=\"http:\/\/www.imooc.com\/favicon.ico\"");

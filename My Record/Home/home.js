@@ -10,12 +10,12 @@ $(document).ready(function(){
         $('.' + id).siblings().hide();
     });
 
-    $('.nav-link').click(function(){
+    $('.nav-link-2').click(function(){
         $('.other-sites').toggle();
     });
 
     $(document).click(function(event){
-        var _con = $('.nav-link');      //設置目標區域
+        var _con = $('.nav-link-2');      //設置目標區域
         if(!_con.is(event.target) && _con.has(event.target).length === 0){
         $('.other-sites').hide();       //淡出消失
         }
