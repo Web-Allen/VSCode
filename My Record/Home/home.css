@@ -12,7 +12,6 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    color: #dfe6e9;
     margin: 0;
     padding: 0;
     border: 0;
@@ -28,6 +27,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body{
+    color: #dfe6e9;
     line-height: 1;
     background-image: url(https://raw.githubusercontent.com/Web-Allen/VSCode/master/My%20Record/image/bg-main.png);
 }
@@ -52,6 +52,7 @@ table {
 }
 
 a {
+    color: #dfe6e9;
     text-decoration: none;
 }
 /* ▲———————— Reset CSS ————————▲ */
@@ -69,7 +70,7 @@ a {
 .bg-color {
     background-color: #343a40;
 }
-/* ▼———————— The nav ————————▼ */ 
+/* ▼———————— 頭部 ————————▼ */ 
 .nav-header {
     display: flex;
     font-size: 1rem;
@@ -102,7 +103,7 @@ a {
     border-radius: 6px;
     box-shadow: inset 0 0 2rem #636e72;
 }
-/* ▼———————— The nav-link ————————▼ */ 
+/* ▼———————— 頭部連結 ————————▼ */ 
 .nav-link-1 {
     display: flex;
 }
@@ -161,10 +162,10 @@ a {
 .other-sites a:active {
     background-color: #E8F0FD;
 }
-/* ▲———————— The nav-link end ————————▲ */
-/* ▲———————— The nav end ————————▲ */
+/* ▲———————— 頭部連結結束 ————————▲ */
+/* ▲———————— 頭部結束 ————————▲ */
 
-/* ▼———————— The aside ————————▼ */
+/* ▼———————— 左欄 ————————▼ */
 #Container-Grid > aside {
     display: flex;
     height: min-content;
@@ -199,12 +200,12 @@ a {
     padding: 12px 15px;
 }
 
-.fa-bars, .fa-seedling {
+.fa-bars, .fa-tree, .fa-seedling {
     margin-right: 6px;
 }
-/* ▲———————— The aside end ————————▲ */
+/* ▲———————— 左欄結束 ————————▲ */
 
-/* ▼———————— The main ————————▼ */
+/* ▼———————— 右邊內容 ————————▼ */
 #Container-Grid > main {
     display: grid;
     height: min-content;
@@ -220,8 +221,8 @@ a {
 }
 
 .section-title {
-    font-weight: bold;
     font-size: 1.3rem;
+    font-weight: bold;
     border-bottom: 1px solid white;
     padding-bottom: 6px;
     margin-bottom: 15px;
@@ -271,5 +272,77 @@ a {
     }
 }    
 /* ▲———————— The RWD end ————————▲ */
-/* ▲———————— The main end ————————▲ */
+/* ▲———————— 右邊內容結束 ————————▲ */
 
+/* ▼———————— 其他.html共用 ————————▼ */
+#others-aside-title {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 6px 15px;
+    background-color: #252323;
+    border-radius: 6px 6px 0 0;
+}
+
+.others-aside-ul li:nth-child(even) {
+    background-color: #9a9d9a2c;
+}
+
+.others-aside-ul li {
+    border: 1px solid transparent;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 12px 15px;
+}
+
+.others-section-title {
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: bold;
+    border-bottom: 1px solid white;
+    padding-bottom: 6px;
+    margin-bottom: 15px;
+}
+
+.others {
+    line-height: 2;
+}
+
+.others h3 {
+
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.others ul {
+    margin-left: 20px;
+    list-style: disc;
+}
+
+.others pre {
+    line-height: 1.5;
+    border: 1px solid #74b9ff;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.Y {
+    color: rgb(220, 220, 170);/* Yellow */
+}
+
+.B {
+    color: rgb(86, 156, 214);/* Blue */
+}
+
+.S-b {
+    color: rgb(156, 220, 254);/* Sky blue */
+}
+
+.O {
+    color: rgb(206, 145, 120);/* Orange */
+}
+
+.G {
+    color: rgb(109, 122, 128);/* Gray */
+}
+/* ▲———————— 其他.html共用結束 ————————▲ */
