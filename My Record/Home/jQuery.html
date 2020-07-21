@@ -18,10 +18,10 @@
         <nav class="nav-header bg-color">
             <script src="nav-title.js"></script>
             <div class="nav-link-1">
-            <a href="">JavaScript</a>
-            <a href="">HTML DOM</a>
-            <a href="">jQuery</a>
-            <a href="">Vue.js</a>
+                <a href="">JavaScript</a>
+                <a href="">HTML DOM</a>
+                <a href="">jQuery</a>
+                <a href="">Vue.js</a>
             </div>
             <script src="nav-link.js"></script>
         </nav>
@@ -49,55 +49,183 @@
         <main class="bg-color">
             <section class="others item-0">
                 <h2 class="others-section-title"> jQuery 語法</h2>
-                    <p>通過 jQuery，您可以選取（查詢，query） HTML 元素，並對它們執行"操作"（actions）。</p>
-                    <hr>
-                    <h3>jQuery 語法</h3>
-                    <p>jQuery 語法是通過選取 HTML 元素，並對選取的元素執行某些操作。</p>
-                    <p>基礎語法： <span class="Y">$</span>(<span class="O">selector</span>).<span class="Y">action</span>()</p>
-                    <ul>
-                        <li>美元符號定義 jQuery</li>
-                        <li>選擇符（<span class="O">selector</span>）"查詢"和"查找" HTML 元素</li>
-                        <li>jQuery 的 <span class="Y">action</span>() 執行對元素的操作</li>
-                    </ul>
-                    <p>實例:</p>
-                    <ul>
-                        <li><span class="Y">$</span>(<span class="O">this</span>).<span class="Y">hide</span>() - 隱藏當前元素</li>
-                        <li><span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">hide</span>() - 隱藏所有 <span class="B"><span class="G">&lt;</span>p<span class="G">&gt;</span></span> 元素</li>
-                        <li><span class="Y">$</span>(<span class="O">"p.test"</span>).<span class="Y">hide</span>() - 隱藏所有 <span class="S-b">class</span>=<span class="O">"test"</span> 的 <span class="B"><span class="G">&lt;</span>p<span class="G">&gt;</span></span> 元素</li>
-                        <li><span class="Y">$</span>(<span class="O">"#test"</span>).<span class="Y">hide</span>() - 隱藏 <span class="S-b">id</span>=<span class="O">"test"</span> 的元素</li>
-                    </ul>
-                    <hr>
-                    <h3>文檔就緒事件</h3>
-                    <pre>
+                <p>通過 jQuery，您可以選取（查詢，query） HTML 元素，並對它們執行"操作"（actions）。</p>
+                <hr>
+                <h3>jQuery 語法</h3>
+                <p>jQuery 語法是通過選取 HTML 元素，並對選取的元素執行某些操作。</p>
+                <p>基礎語法： <span class="Y">$</span>(<span class="O">selector</span>).<span class="Y">action</span>()</p>
+                <ul>
+                    <li>美元符號定義 jQuery</li>
+                    <li>選擇符（<span class="O">selector</span>）"查詢"和"查找" HTML 元素</li>
+                    <li>jQuery 的 <span class="Y">action</span>() 執行對元素的操作</li>
+                </ul>
+                <p>實例:</p>
+                <ul>
+                    <li><span class="Y">$</span>(<span class="O">this</span>).<span class="Y">hide</span>() - 隱藏當前元素
+                    </li>
+                    <li><span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">hide</span>() - 隱藏所有 <span
+                            class="B"><span class="G">&lt;</span>p<span class="G">&gt;</span></span> 元素</li>
+                    <li><span class="Y">$</span>(<span class="O">"p.test"</span>).<span class="Y">hide</span>() - 隱藏所有
+                        <span class="S-b">class</span>=<span class="O">"test"</span> 的 <span class="B"><span
+                                class="G">&lt;</span>p<span class="G">&gt;</span></span> 元素</li>
+                    <li><span class="Y">$</span>(<span class="O">"#test"</span>).<span class="Y">hide</span>() - 隱藏
+                        <span class="S-b">id</span>=<span class="O">"test"</span> 的元素</li>
+                </ul>
+                <hr>
+                <h3>文檔就緒事件</h3>
+                <pre>
 <span class="Y">$</span>(<span class="S-b">document</span>).<span class="Y">ready</span>(<span class="B">function</span>(){
     
     <span class="G">// 開始寫 jQuery 代碼...</span>
     
 });                 </pre>
-                    <p>這是為了防止文檔在完全加載（就緒）之前運行 jQuery 代碼，即在 DOM 加載完成後才可以對 DOM 進行操作。</p>
-                    <p>如果在文檔沒有完全加載之前就運行函數，操作可能失敗。下面是兩個具體的例子：</p>
-                    <ul>
-                        <li>試圖隱藏一個不存在的元素</li>
-                        <li>獲得未完全加載的圖像的大小</li>
-                    </ul>
-                    <p>提示： 簡潔寫法（與以上寫法效果相同）:</p>
-                    <pre>
+                <p>這是為了防止文檔在完全加載（就緒）之前運行 jQuery 代碼，即在 DOM 加載完成後才可以對 DOM 進行操作。</p>
+                <p>如果在文檔沒有完全加載之前就運行函數，操作可能失敗。下面是兩個具體的例子：</p>
+                <ul>
+                    <li>試圖隱藏一個不存在的元素</li>
+                    <li>獲得未完全加載的圖像的大小</li>
+                </ul>
+                <p>提示： 簡潔寫法（與以上寫法效果相同）:</p>
+                <pre>
 <span class="Y">$</span>(<span class="B">function</span>(){
 
     <span class="G">// 開始寫 jQuery 代碼...</span>
 
 });                 </pre>
-                    <p>以上兩種方式你可以選擇你喜歡的方式實現文檔就緒後執行 jQuery 方法。</p>                   
+                <p>以上兩種方式你可以選擇你喜歡的方式實現文檔就緒後執行 jQuery 方法。</p>
             </section>
 
             <section class="others item-1">
                 <h2 class="others-section-title"> jQuery 選擇器</h2>
-                <div>
-                    
-                </div>
+                <p>jQuery 選擇器允許您對 HTML 元素組或單個元素進行操作。</p>
+                <hr>
+                <h3>jQuery 選擇器</h3>
+                <p>jQuery 選擇器基於元素的 id、類、類型、屬性、屬性值等"查找"（或選擇）HTML 元素。 它基於已經存在的 CSS 選擇器，除此之外，它還有一些自定義的選擇器。</p>
+                <p>jQuery 中所有選擇器都以美元符號開頭：<span class="Y">$</span>()。</p>
+                <hr>
+                <h3>元素選擇器</h3>
+                <p>jQuery 元素選擇器基於元素名選取元素。</p>
+                <p>在頁面中選取所有 <span class="G">&lt;</span> <span class="B">p</span><span class="G">&gt;</span> 元素:</p>
+                <p class="code"><span class="Y">$</span>(<span class="O">"p"</span>)</p>
+                <p>實例:</p>
+                <p>用戶點擊按鈕後，所有 <span class="G">&lt;</span> <span class="B">p</span><span class="G">&gt;</span> 元素都隱藏。</p>
+                <pre>
+<span class="Y">$</span>(<span class="S-b">document</span>).<span class="Y">ready</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"button"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+        <span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">hide</span>();
+    }); 
+});                 </pre>
+                <h3>#id 選擇器</h3>
+                <p>jQuery #id 選擇器通過 HTML 元素的 id 屬性選取指定的元素。</p>
+                <p>頁面中元素的 id 是唯一的，所以您要在頁面中選取唯一的元素需要通過 #id 選擇器。</p>
+                <p>通過 id 選取元素語法如下：</p>
+                <p class="code"><span class="Y">$</span>(<span class="O">"#test"</span>)</p>
+                <p>實例:</p>
+                <p>當用戶點擊按鈕後，有 <span class="S-b">id</span>=<span class="O">"test"</span> 屬性的元素將被隱藏。</p>
+                <pre>
+<span class="Y">$</span>(<span class="S-b">document</span>).<span class="Y">ready</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"button"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+        <span class="Y">$</span>(<span class="O">"#test"</span>).<span class="Y">hide</span>();
+    }); 
+});                 </pre>
+                <h3>.class 選擇器</h3>
+                <p>jQuery 類選擇器可以通過指定的 class 查找元素。</p>
+                <p>語法如下：</p>
+                <p class="code"><span class="Y">$</span>(<span class="O">".test"</span>)</p>
+                <p>實例:</p>
+                <p>用戶點擊按鈕後所有帶有 class="test" 屬性的元素都隱藏。</p>
+                <pre>
+<span class="Y">$</span>(<span class="S-b">document</span>).<span class="Y">ready</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"button"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+        <span class="Y">$</span>(<span class="O">".test"</span>).<span class="Y">hide</span>();
+    }); 
+});                 </pre>
+                <h3>更多實例</h3>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th width="20%">語法</th>
+                            <th width="80%">描述</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="Y">$</span>(<span class="O">"*"</span>)</td>
+                            <td>選取所有元素</td>
+                        </tr>
+                        <tr>
+                            <td><span class="Y">$</span>(<span class="B">this</span>)</td>
+                            <td>選取當前 HTML 元素</td>
+                        </tr>
+                        <tr>
+                            <td><span class="Y">$</span>(<span class="O">"p.intro"</span>)</td>
+                            <td>選取 <span class="S-b">class</span> 為 <span class="O">intro</span> 的 <span
+                                    class="G">&lt;</span><span class="B">p</span><span class="G">&gt;</span> 元素</td>
+                        </tr>
+                        <tr>
+                            <td><span class="Y">$</span>(<span class="O">"p:first"</span>)</td>
+                            <td>選取第一個 <span class="G">&lt;</span><span class="B">p</span><span class="G">&gt;</span> 元素
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="Y">$</span>(<span class="O">"ul li:first"</span>)</td>
+                            <td>選取第一個 <span class="G">&lt;</span><span class="B">ul</span><span class="G">&gt;</span>
+                                元素的第一個 <span class="G">&lt;</span><span class="B">li</span><span class="G">&gt;</span>
+                                元素</td>
+                        </tr>
+                        <tr>
+                            <td><span class="Y">$</span>(<span class="O">"ul li:first-child"</span>)</td>
+                            <td>選取每個 <span class="G">&lt;</span><span class="B">ul</span><span class="G">&gt;</span>
+                                元素的第一個 <span class="G">&lt;</span><span class="B">li</span><span class="G">&gt;</span>
+                                元素</td>
+                        </tr>
+                        <tr>
+                            <td><span class="Y">$</span>(<span class="O">"[href]"</span>)</td>
+                            <td>選取帶有 <span class="S-b">href</span> 屬性的元素</td>
+                        </tr>
+                        <tr>
+                            <td><span class="Y">$</span>(<span class="O">"a[target='_blank']"</span>)</td>
+                            <td>選取所有 <span class="S-b">target</span> 屬性值等於 <span class="O">"_blank"</span> 的 <span
+                                    class="G">&lt;</span><span class="B">a</span><span class="G">&gt;</span> 元素</td>
+                        </tr>
+                        <tr>
+                            <td><span class="Y">$</span>(<span class="O">"a[target!='_blank']"</span>)</td>
+                            <td>選取所有 <span class="S-b">target</span> 屬性值不等於 <span class="O">"_blank"</span> 的 <span
+                                    class="G">&lt;</span><span class="B">a</span><span class="G">&gt;</span> 元素</td>
+                        </tr>
+                        <tr>
+                            <td><span class="Y">$</span>(<span class="O">":button"</span>)</td>
+                            <td>選取所有 <span class="S-b">type</span>=<span class="O">"button"</span> 的 <span
+                                    class="G">&lt;</span><span class="B">input</span><span class="G">&gt;</span> 元素 和
+                                <span class="G">&lt;</span><span class="B">button</span><span class="G">&gt;</span> 元素
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span class="Y">$</span>(<span class="O">"tr:even"</span>)</td>
+                            <td>選取偶數位置的 <span class="G">&lt;</span><span class="B">tr</span><span class="G">&gt;</span>
+                                元素</td>
+                        </tr>
+                        <tr>
+                            <td><span class="Y">$</span>(<span class="O">"tr:odd"</span>)</td>
+                            <td>選取奇數位置的 <span class="G">&lt;</span><span class="B">tr</span><span class="G">&gt;</span>
+                                元素</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>獨立文件中使用 jQuery 函數</h3>
+                <p>如果您的網站包含許多頁面，並且您希望您的 jQuery 函數易於維護，那麼請把您的 jQuery 函數放到獨立的 .js 文件中。</p>
+                <p>當我們在教程中演示 jQuery 時，會將函數直接添加到
+
+                    <head> 部分中。不過，把它們放到一個單獨的文件中會更好，就像這樣（通過 src 屬性來引用文件）：</p>
+                <pre>
+<span class="G">&lt;</span><span class="B">head</span><span class="G">&gt;</span>
+<span class="G">&lt;</span><span class="B">script</span> <span class="S-b">src</span>= <span class="O">"http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js"</span><span class="G">&gt;</span><span class="G">&lt;/</span><span class="B">script</span><span class="G">&gt;</span>
+<span class="G">&lt;</span><span class="B">script</span> <span class="S-b">src</span>= <span class="O">"my_jquery_functions.js"</span><span class="G">&gt;</span><span class="G">&lt;/</span><span class="B">script</span><span class="G">&gt;</span>
+<span class="G">&lt;/</span><span class="B">head</span><span class="G">&gt;</span></pre>
             </section>
         </main>
     </div><!-- Container-Grid 結束 -->
     <!-- ▲———————— The main content end ————————▲ -->
 </body>
+
 </html>

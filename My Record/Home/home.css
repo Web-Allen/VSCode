@@ -7,7 +7,7 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+/* table, caption, tbody, tfoot, thead, tr, th, td, */
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
@@ -307,6 +307,10 @@ a {
     line-height: 2;
 }
 
+.others:nth-child(n+2) {
+    display: none;
+}
+
 .others h3 {
 
     color: #ffffff;
@@ -324,6 +328,27 @@ a {
     border: 1px solid #74b9ff;
     border-radius: 6px;
     padding: 15px;
+}
+
+.code {
+    border: 1px solid #74b9ff;
+    border-radius: 6px;
+    padding: 0 6px;
+    margin-bottom: 6px;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    text-indent: 6px;
+}
+
+th {
+    background-color: #40739e;
+}
+
+tr:nth-child(even) {
+    background-color: #787a782d;
 }
 
 .Y {
