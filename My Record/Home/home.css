@@ -52,7 +52,7 @@ table {
 }
 
 a {
-    color: #dfe6e9;
+    color: white;
     text-decoration: none;
 }
 /* ▲———————— Reset CSS ————————▲ */
@@ -92,6 +92,7 @@ a {
 
 .nav-header a {
     padding: 12px;
+    margin-right: 6px;
 }
 
 .nav-header > a:hover, .nav-link-1 > a:hover {
@@ -194,6 +195,10 @@ a {
     opacity: 0.3;
 }
 
+.aside-ul li:last-child {
+    border-radius: 0 0 6px 6px;
+}
+
 .aside-ul li {
     font-size: 1rem;
     cursor: pointer;
@@ -278,24 +283,29 @@ a {
 #others-aside-title {
     font-size: 1.3rem;
     font-weight: bold;
-    padding: 6px 15px;
-    background-color: #252323;
     border-radius: 6px 6px 0 0;
+    background-color: #047c7c;
+    padding: 6px 15px;
 }
 
 .others-aside-ul li:nth-child(even) {
-    background-color: #9a9d9a2c;
+    background-color: #abd1c7;
 }
 
 .others-aside-ul li {
-    border: 1px solid transparent;
+    color: black;
     font-size: 1rem;
+    background-color: white;
     cursor: pointer;
     padding: 12px 15px;
 }
 
+.others-aside-ul li:last-child {
+    border-radius: 0 0 6px 6px;
+}
+
 .others-section-title {
-    color: #ffffff;
+    color: white;
     font-size: 1.8rem;
     font-weight: bold;
     border-bottom: 1px solid white;
@@ -303,27 +313,26 @@ a {
     margin-bottom: 15px;
 }
 
-.others {
+.others-section {
     line-height: 2;
 }
 
-.others:nth-child(n+2) {
+.others-section:nth-child(n+2) {
     display: none;
 }
 
-.others h3 {
-
-    color: #ffffff;
+.others-section h3 {
+    color: white;
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-.others ul {
+.others-section ul {
     margin-left: 20px;
     list-style: disc;
 }
 
-.others pre {
+.others-section pre {
     line-height: 1.5;
     border: 1px solid #74b9ff;
     border-radius: 6px;
@@ -350,6 +359,11 @@ th {
 tr:nth-child(even) {
     background-color: #787a782d;
 }
+
+/* .active {
+    border-radius: 6px;
+    box-shadow: inset 0 0 1rem #636e72;
+} */
 
 .Y {
     color: rgb(220, 220, 170);/* Yellow */

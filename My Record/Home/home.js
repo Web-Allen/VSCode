@@ -2,12 +2,15 @@
 $(document).ready(function(){
     $('#aside-title').click(function(){
         $('.items-all').show();
+        $('.aside-ul li').css('background-color', '');
     });
 
     $('.items').click(function(){
         var id = $(this).prop('id');
         $('.' + id).show();
         $('.' + id).siblings().hide();
+        $(this).css('box-shadow', 'inset -3px 0 6px 6px #5b9ef0');
+        $(this).siblings().css('box-shadow', '');
     });
 
     $('.nav-link-2').click(function(){
