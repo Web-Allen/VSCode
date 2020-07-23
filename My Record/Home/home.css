@@ -208,6 +208,10 @@ a {
 .fa-bars, .fa-tree, .fa-seedling {
     margin-right: 6px;
 }
+
+.items:hover {
+    box-shadow: inset -3px 0 6px 6px #5b9ef0;
+}
 /* ▲———————— 左欄結束 ————————▲ */
 
 /* ▼———————— 右邊內容 ————————▼ */
@@ -360,10 +364,14 @@ tr:nth-child(even) {
     background-color: #787a782d;
 }
 
-/* .active {
+.active {
     border-radius: 6px;
     box-shadow: inset 0 0 1rem #636e72;
-} */
+}
+
+.active-li {
+    box-shadow: inset -3px 0 6px 6px #5b9ef0;
+}
 
 .Y {
     color: rgb(220, 220, 170);/* Yellow */
