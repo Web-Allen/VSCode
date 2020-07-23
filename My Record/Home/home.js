@@ -30,3 +30,11 @@ $(document).ready(function(){   //文檔就緒
     });
 });
 //▲———————— The Home end ————————▲
+
+//▼———————— 其他html ————————▼
+$(document).ready(function(){
+	$('.up').click(function(){ 
+    $('html,body').animate({scrollTop:0}, 333);
+    });
+});
+//▲———————— 其他html結束 ————————▲

@@ -190,8 +190,8 @@ a {
 }
 
 .aside-ul li:nth-child(n+3) {
-    cursor: not-allowed;
-    user-select: none;
+    pointer-events: none;
+    cursor: default;
     opacity: 0.3;
 }
 
@@ -268,6 +268,11 @@ a {
     border: 2px solid #5b9ef0;
 }
 
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+}
 /* ▼———————— The RWD ————————▼ */
 @media (max-width: 992px) { 
     .section-grid {
@@ -298,10 +303,10 @@ a {
 
 .others-aside-ul li {
     color: black;
-    font-size: 1rem;
+    font-size: 0.8rem;
     background-color: white;
     cursor: pointer;
-    padding: 12px 15px;
+    padding: 8px 15px;
 }
 
 .others-aside-ul li:last-child {
@@ -371,6 +376,14 @@ tr:nth-child(even) {
 
 .active-li {
     box-shadow: inset -3px 0 6px 6px #5b9ef0;
+}
+
+.up {
+    position: fixed;
+    font-size: 2rem;
+    cursor: pointer;
+    right: 3%;
+    bottom: 10%;
 }
 
 .Y {
