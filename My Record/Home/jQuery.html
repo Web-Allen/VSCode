@@ -227,7 +227,71 @@
 
             <section class="others-section item-2">
                 <h2 class="others-section-title"> jQuery 事件</h2>
-                
+                <p>jQuery 為事件處理特別設計。</p>
+                <hr>
+                <h3>什麼是事件？</h3>
+                <p>頁面對不同訪問者的響應叫做事件。</p>
+                <p>事件處理程序指的是當 HTML 中發生某些事件時所調用的方法。</p>
+                <p>實例：</p>
+                <ul>
+                    <li>在元素上移動鼠標。</li>
+                    <li>選取單選按鈕</li>
+                    <li>點擊元素</li>
+                </ul>
+                <p>在事件中經常使用術語"觸發"（或"激發"）例如： "當您按下按鍵時觸發 keypress 事件"。</p>
+                <p>常見 DOM 事件：</p>
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th width="25%">鼠標事件</th>
+                            <th width="25%">鍵盤事件</th>
+                            <th width="25%">表單事件</th>
+                            <th width="25%">文檔/窗口事件</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                                <td>click</td>
+                                <td>keypress</td>
+                                <td>submit</td>
+                                <td>load</td>
+                            </tr>
+                            <tr>
+                                <td>dblclick</td>
+                                <td>keydown</td>
+                                <td>change</td>
+                                <td>resize</td>
+                            </tr>
+                            <tr>
+                                <td>mouseenter</td>
+                                <td>keyup</td>
+                                <td>focus</td>
+                                <td>scroll</td>
+                            </tr>
+                            <tr>
+                                <td>mouseleave</td>
+                                <td></td>
+                                <td>blur</td>
+                                <td>unload</td>
+                            </tr>
+                            <tr>
+                                <td>hover</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                </table>
+                <h3>jQuery 事件方法語法</h3>
+                <p>在 jQuery 中，大多數 DOM 事件都有一個等效的 jQuery 方法。</p>
+                <p>頁面中指定一個點擊事件：</p>
+                <p class="code"><span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">click</span>();</p>
+                <p>下一步是定義什麼時間觸發事件。您可以通過一個事件函數實現：</p>
+                <pre>
+<span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+    <span class="G"> // 動作觸發後執行的代碼!!</span>
+});                 </pre>
+                    <h3>常用的 jQuery 事件方法</h3>
             </section>
 
             <section class="others-section item-3">
