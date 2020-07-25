@@ -249,38 +249,38 @@
                             <th width="25%">文檔/窗口事件</th>
                         </tr>
                     </thead>
-                        <tbody>
-                            <tr>
-                                <td>click</td>
-                                <td>keypress</td>
-                                <td>submit</td>
-                                <td>load</td>
-                            </tr>
-                            <tr>
-                                <td>dblclick</td>
-                                <td>keydown</td>
-                                <td>change</td>
-                                <td>resize</td>
-                            </tr>
-                            <tr>
-                                <td>mouseenter</td>
-                                <td>keyup</td>
-                                <td>focus</td>
-                                <td>scroll</td>
-                            </tr>
-                            <tr>
-                                <td>mouseleave</td>
-                                <td></td>
-                                <td>blur</td>
-                                <td>unload</td>
-                            </tr>
-                            <tr>
-                                <td>hover</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
+                    <tbody>
+                        <tr>
+                            <td>click</td>
+                            <td>keypress</td>
+                            <td>submit</td>
+                            <td>load</td>
+                        </tr>
+                        <tr>
+                            <td>dblclick</td>
+                            <td>keydown</td>
+                            <td>change</td>
+                            <td>resize</td>
+                        </tr>
+                        <tr>
+                            <td>mouseenter</td>
+                            <td>keyup</td>
+                            <td>focus</td>
+                            <td>scroll</td>
+                        </tr>
+                        <tr>
+                            <td>mouseleave</td>
+                            <td></td>
+                            <td>blur</td>
+                            <td>unload</td>
+                        </tr>
+                        <tr>
+                            <td>hover</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
                 </table>
                 <h3>jQuery 事件方法語法</h3>
                 <p>在 jQuery 中，大多數 DOM 事件都有一個等效的 jQuery 方法。</p>
@@ -291,35 +291,90 @@
 <span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
     <span class="G"> // 動作觸發後執行的代碼!!</span>
 });                 </pre>
-                    <h3>常用的 jQuery 事件方法</h3>
+                <h3>常用的 jQuery 事件方法</h3>
+                <p><span class="Y">click</span>()</p>
+                <p>是當按鈕點擊事件被觸發時會調用一個函數。</p>
+                <p>該函數在用戶點擊 HTML 元素時執行。</p>
+                <p>在下面的實例中，當點擊事件在某個 <span class="G">&lt;</span><span class="B">p</span><span class="G">&gt;</span> 元素上觸發時，隱藏當前的 <span class="G">&lt;</span><span class="B">p</span><span class="G">&gt;</span> 元素：</p>
+<pre><span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="B">this</span>).<span class="Y">hide</span>();
+});        </pre>
+                <p><span class="Y">dblclick</span>()</p>
+                <p>當雙擊元素時，會發生 dblclick 事件。</p>
+<pre><span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">dblclick</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="B">this</span>).<span class="Y">hide</span>();
+});        </pre>
+                <p><span class="Y">mouseenter</span>()</p>
+                <p>當鼠標指針穿過元素時，會發生 mouseenter 事件。</p>
+<pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">mouseenter</span>(<span class="B">function</span>(){
+    <span class="Y">alert</span>(<span class="O">"您的鼠標移到了 id="p1" 的元素上!"</span>);
+});        </pre>
+                <p><span class="Y">mouseleave</span>()</p>
+                <p>當鼠標指針離開元素時，會發生 mouseleave 事件。</p>
+<pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">mouseleave</span>(<span class="B">function</span>(){
+    <span class="Y">alert</span>(<span class="O">"再見，您的鼠標離開了該段落。"</span>);
+});        </pre>
+                <p><span class="Y">mousedown</span>()</p>
+                <p>當鼠標指針移動到元素上方，並按下鼠標按鍵時，會發生 mousedown 事件。</p>
+<pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">mousedown</span>(<span class="B">function</span>(){
+    <span class="Y">alert</span>(<span class="O">"鼠標在該段落上按下！"</span>);
+});        </pre>
+                <p><span class="Y">mouseup</span>()</p>
+                <p>當在元素上鬆開鼠標按鈕時，會發生 mouseup 事件。</p>
+<pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">mouseup</span>(<span class="B">function</span>(){
+    <span class="Y">alert</span>(<span class="O">"鼠標在段落上鬆開。"</span>);
+});        </pre>
+                <p><span class="Y">hover</span>()</p>
+                <p>用於模擬光標懸停事件。</p>
+                <p>當鼠標移動到元素上時，會觸髮指定的第一個函數(mouseenter);當鼠標移出這個元素時，會觸髮指定的第二個函數(mouseleave)。</p>
+<pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">hover</span>(
+    <span class="B">function</span>(){
+        <span class="Y">alert</span>(<span class="O">"你進入了 p1!"</span>);
+    },      
+    <span class="B">function</span>(){
+        <span class="Y">alert</span>(<span class="O">"拜拜! 现在你离开了 p1!"</span>);
+    }
+);       
+</pre>
+                <p><span class="Y">focus</span>()</p>
+                <p>當元素獲得焦點時，發生 focus 事件。</p>
+                <p>當通過鼠標點擊選中元素或通過 tab 鍵定位到元素時，該元素就會獲得焦點。</p>
+<pre><span class="Y">$</span>(<span class="O">"input"</span>).<span class="Y">focus</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="B">this</span>).<span class="Y">css</span>(<span class="O">"background-color","#cccccc"</span>);
+});        </pre>
+                <p><span class="Y">blur</span>()</p>
+                <p>當元素失去焦點時，發生 blur 事件。</p>
+<pre><span class="Y">$</span>(<span class="O">"input"</span>).<span class="Y">blur</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="B">this</span>).<span class="Y">css</span>(<span class="O">"background-color","#ffffff"</span>);
+});        </pre>
             </section>
 
             <section class="others-section item-3">
-                <h2 class="others-section-title"> jQuery 隱藏和顯示</h2>                
+                <h2 class="others-section-title"> jQuery 隱藏和顯示</h2>
             </section>
 
             <section class="others-section item-4">
-                <h2 class="others-section-title"> jQuery 淡入淡出</h2>                
+                <h2 class="others-section-title"> jQuery 淡入淡出</h2>
             </section>
 
             <section class="others-section item-5">
-                <h2 class="others-section-title"> jQuery 滑動</h2>                
+                <h2 class="others-section-title"> jQuery 滑動</h2>
             </section>
 
             <section class="others-section item-6">
-                <h2 class="others-section-title"> jQuery 動畫</h2>                
+                <h2 class="others-section-title"> jQuery 動畫</h2>
             </section>
 
             <section class="others-section item-7">
-                <h2 class="others-section-title"> jQuery 停止動畫</h2>                
+                <h2 class="others-section-title"> jQuery 停止動畫</h2>
             </section>
 
             <section class="others-section item-8">
-                <h2 class="others-section-title"> jQuery Callback 方法</h2>                
+                <h2 class="others-section-title"> jQuery Callback 方法</h2>
             </section>
 
             <section class="others-section item-9">
-                <h2 class="others-section-title"> jQuery - 鏈(Chaining)</h2>                
+                <h2 class="others-section-title"> jQuery - 鏈(Chaining)</h2>
             </section>
         </main>
     </div><!-- Container-Grid 結束 -->
