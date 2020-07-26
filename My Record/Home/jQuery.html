@@ -295,39 +295,40 @@
                 <p><span class="Y">click</span>()</p>
                 <p>是當按鈕點擊事件被觸發時會調用一個函數。</p>
                 <p>該函數在用戶點擊 HTML 元素時執行。</p>
-                <p>在下面的實例中，當點擊事件在某個 <span class="G">&lt;</span><span class="B">p</span><span class="G">&gt;</span> 元素上觸發時，隱藏當前的 <span class="G">&lt;</span><span class="B">p</span><span class="G">&gt;</span> 元素：</p>
-<pre><span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+                <p>在下面的實例中，當點擊事件在某個 <span class="G">&lt;</span><span class="B">p</span><span class="G">&gt;</span>
+                    元素上觸發時，隱藏當前的 <span class="G">&lt;</span><span class="B">p</span><span class="G">&gt;</span> 元素：</p>
+                <pre><span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
     <span class="Y">$</span>(<span class="B">this</span>).<span class="Y">hide</span>();
 });        </pre>
                 <p><span class="Y">dblclick</span>()</p>
                 <p>當雙擊元素時，會發生 dblclick 事件。</p>
-<pre><span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">dblclick</span>(<span class="B">function</span>(){
+                <pre><span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">dblclick</span>(<span class="B">function</span>(){
     <span class="Y">$</span>(<span class="B">this</span>).<span class="Y">hide</span>();
 });        </pre>
                 <p><span class="Y">mouseenter</span>()</p>
                 <p>當鼠標指針穿過元素時，會發生 mouseenter 事件。</p>
-<pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">mouseenter</span>(<span class="B">function</span>(){
+                <pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">mouseenter</span>(<span class="B">function</span>(){
     <span class="Y">alert</span>(<span class="O">"您的鼠標移到了 id="p1" 的元素上!"</span>);
 });        </pre>
                 <p><span class="Y">mouseleave</span>()</p>
                 <p>當鼠標指針離開元素時，會發生 mouseleave 事件。</p>
-<pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">mouseleave</span>(<span class="B">function</span>(){
+                <pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">mouseleave</span>(<span class="B">function</span>(){
     <span class="Y">alert</span>(<span class="O">"再見，您的鼠標離開了該段落。"</span>);
 });        </pre>
                 <p><span class="Y">mousedown</span>()</p>
                 <p>當鼠標指針移動到元素上方，並按下鼠標按鍵時，會發生 mousedown 事件。</p>
-<pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">mousedown</span>(<span class="B">function</span>(){
+                <pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">mousedown</span>(<span class="B">function</span>(){
     <span class="Y">alert</span>(<span class="O">"鼠標在該段落上按下！"</span>);
 });        </pre>
                 <p><span class="Y">mouseup</span>()</p>
                 <p>當在元素上鬆開鼠標按鈕時，會發生 mouseup 事件。</p>
-<pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">mouseup</span>(<span class="B">function</span>(){
+                <pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">mouseup</span>(<span class="B">function</span>(){
     <span class="Y">alert</span>(<span class="O">"鼠標在段落上鬆開。"</span>);
 });        </pre>
                 <p><span class="Y">hover</span>()</p>
                 <p>用於模擬光標懸停事件。</p>
                 <p>當鼠標移動到元素上時，會觸髮指定的第一個函數(mouseenter);當鼠標移出這個元素時，會觸髮指定的第二個函數(mouseleave)。</p>
-<pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">hover</span>(
+                <pre><span class="Y">$</span>(<span class="O">"#p1"</span>).<span class="Y">hover</span>(
     <span class="B">function</span>(){
         <span class="Y">alert</span>(<span class="O">"你進入了 p1!"</span>);
     },      
@@ -339,18 +340,58 @@
                 <p><span class="Y">focus</span>()</p>
                 <p>當元素獲得焦點時，發生 focus 事件。</p>
                 <p>當通過鼠標點擊選中元素或通過 tab 鍵定位到元素時，該元素就會獲得焦點。</p>
-<pre><span class="Y">$</span>(<span class="O">"input"</span>).<span class="Y">focus</span>(<span class="B">function</span>(){
+                <pre><span class="Y">$</span>(<span class="O">"input"</span>).<span class="Y">focus</span>(<span class="B">function</span>(){
     <span class="Y">$</span>(<span class="B">this</span>).<span class="Y">css</span>(<span class="O">"background-color","#cccccc"</span>);
 });        </pre>
                 <p><span class="Y">blur</span>()</p>
                 <p>當元素失去焦點時，發生 blur 事件。</p>
-<pre><span class="Y">$</span>(<span class="O">"input"</span>).<span class="Y">blur</span>(<span class="B">function</span>(){
+                <pre><span class="Y">$</span>(<span class="O">"input"</span>).<span class="Y">blur</span>(<span class="B">function</span>(){
     <span class="Y">$</span>(<span class="B">this</span>).<span class="Y">css</span>(<span class="O">"background-color","#ffffff"</span>);
 });        </pre>
             </section>
 
             <section class="others-section item-3">
                 <h2 class="others-section-title"> jQuery 隱藏和顯示</h2>
+                <h3>jQuery hide() 和 show()</h3>
+                <p>通過 jQuery，您可以使用 hide() 和 show() 方法來隱藏和顯示 HTML 元素：</p>
+                <pre><span class="Y">$</span>(<span class="O">"#hide"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">hide</span>();
+});
+
+<span class="Y">$</span>(<span class="O">"#show"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">show</span>();
+});</pre>
+                <p>語法:</p>
+                <div class="code"><span class="Y">$</span>(<span class="S-b">selector</span>).<span
+                        class="Y">hide</span>(<span class="S-b">speed</span>,<span class="S-b">callback</span>);<p><span
+                            class="Y">$</span>(<span class="S-b">selector</span>).<span class="Y">show</span>(<span
+                            class="S-b">speed</span>,<span class="S-b">callback</span>);</p>
+                </div>
+                <p>可選的 speed 參數規定隱藏/顯示的速度，可以取以下值："slow"、"fast" 或毫秒。</p>
+                <p>可選的 callback 參數是隱藏或顯示完成後所執行的函數名稱。</p>
+                <p>下面的例子演示了帶有 speed 參數的 hide() 方法：</p>
+                <pre><span class="Y">$</span>(<span class="O">"button"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">hide</span>(1000);
+});</pre>
+                <p>下面的例子演示了帶有 speed 參數的 hide() 方法，並使用回調函數：</p>
+                <pre><span class="Y">$</span>(<span class="S-b">document</span>).<span class="Y">ready</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">".hidebtn"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+        <span class="Y">$</span>(<span class="O">"div"</span>).<span class="Y">hide</span>(1000,<span class="O">"linear"</span>,<span class="B">function</span>(){
+            <span class="Y">alert</span>(<span class="O">"Hide() 方法已完成!"</span>);
+        });
+    });
+});</pre>
+                <p>第二個參數是一個字符串，表示過渡使用哪種緩動函數。（譯者註：jQuery自身提供"linear" 和 "swing"，其他可以使用相關的插件）。</p>
+                <h3>jQuery toggle()</h3>
+                <p>通過 jQuery，您可以使用 toggle() 方法來切換 hide() 和 show() 方法。 </p>
+                <pre><span class="Y">$</span>(<span class="O">"button"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">toggle</span>();
+});</pre>
+                <p>語法:</p>
+                <div class="code"><span class="Y">$</span>(<span class="S-b">selector</span>).<span
+                        class="Y">toggle</span>(<span class="S-b">speed</span>,<span class="S-b">callback</span>);</div>
+                <p>可選的 speed 參數規定隱藏/顯示的速度，可以取以下值："slow"、"fast" 或毫秒。 </p>
+                <p>可選的 callback 參數是隱藏或顯示完成後所執行的函數名稱。</p>
             </section>
 
             <section class="others-section item-4">
