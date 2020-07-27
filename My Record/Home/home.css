@@ -405,4 +405,8 @@ tr:nth-child(even) {
 .G {
     color: rgb(109, 122, 128);/* Gray */
 }
+
+.L-g {
+    color: rgb(181, 206, 137);/* Light green */
+}
 /* ▲———————— 其他.html共用結束 ————————▲ */

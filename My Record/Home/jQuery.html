@@ -371,12 +371,12 @@
                 <p>可選的 callback 參數是隱藏或顯示完成後所執行的函數名稱。</p>
                 <p>下面的例子演示了帶有 speed 參數的 hide() 方法：</p>
                 <pre><span class="Y">$</span>(<span class="O">"button"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
-    <span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">hide</span>(1000);
+    <span class="Y">$</span>(<span class="O">"p"</span>).<span class="Y">hide</span>(<span class="L-g">1000</span>);
 });</pre>
                 <p>下面的例子演示了帶有 speed 參數的 hide() 方法，並使用回調函數：</p>
                 <pre><span class="Y">$</span>(<span class="S-b">document</span>).<span class="Y">ready</span>(<span class="B">function</span>(){
     <span class="Y">$</span>(<span class="O">".hidebtn"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
-        <span class="Y">$</span>(<span class="O">"div"</span>).<span class="Y">hide</span>(1000,<span class="O">"linear"</span>,<span class="B">function</span>(){
+        <span class="Y">$</span>(<span class="O">"div"</span>).<span class="Y">hide</span>(<span class="L-g">1000</span>,<span class="O">"linear"</span>,<span class="B">function</span>(){
             <span class="Y">alert</span>(<span class="O">"Hide() 方法已完成!"</span>);
         });
     });
@@ -396,6 +396,70 @@
 
             <section class="others-section item-4">
                 <h2 class="others-section-title"> jQuery 淡入淡出</h2>
+                <h3>jQuery Fading 方法</h3>
+                <p>通過 jQuery，您可以實現元素的淡入淡出效果。</p>
+                <p>jQuery 擁有下面四種 fade 方法：</p>
+                <ul>
+                    <li><span class="Y">fadeIn</span>()</li>
+                    <li><span class="Y">fadeOut</span>()</li>
+                    <li><span class="Y">fadeToggle</span>()</li>
+                    <li><span class="Y">fadeTo</span>()</li>
+                </ul>
+                <hr>
+                <h3>jQuery fadeIn() 方法</h3>
+                <p>jQuery fadeIn() 用於淡入已隱藏的元素。</p>
+                <p>語法:</p>
+                <div class="code"><span class="Y">$</span>(<span class="S-b">selector</span>).<span
+                    class="Y">fadeIn</span>(<span class="S-b">speed</span>,<span class="S-b">callback</span>);</div>
+                <p>可選的 speed 參數規定效果的時長。它可以取以下值："slow"、"fast" 或毫秒。</p>
+                <p>可選的 callback 參數是 fading 完成後所執行的函數名稱。</p>
+                <p>下面的例子演示了帶有不同參數的 fadeIn() 方法：</p>
+<pre><span class="Y">$</span>(<span class="O">"button"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"#div1"</span>).<span class="Y">fadeIn</span>();
+    <span class="Y">$</span>(<span class="O">"#div2"</span>).<span class="Y">fadeIn</span>(<span class="O">"slow"</span>);
+    <span class="Y">$</span>(<span class="O">"#div3"</span>).<span class="Y">fadeIn</span>(<span class="L-g">3000</span>);
+});</pre>
+                <h3>jQuery fadeOut() 方法</h3>
+                <p>jQuery fadeOut() 方法用於淡出可見元素。</p>
+                <p>語法:</p>
+                <div class="code"><span class="Y">$</span>(<span class="S-b">selector</span>).<span
+                    class="Y">fadeOut</span>(<span class="S-b">speed</span>,<span class="S-b">callback</span>);</div>
+                <p>可選的 speed 參數規定效果的時長。它可以取以下值："slow"、"fast" 或毫秒。</p>
+                <p>可選的 callback 參數是 fading 完成後所執行的函數名稱。</p>
+                <p>下面的例子演示了帶有不同參數的 fadeOut() 方法：</p>
+<pre><span class="Y">$</span>(<span class="O">"button"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"#div1"</span>).<span class="Y">fadeOut</span>();
+    <span class="Y">$</span>(<span class="O">"#div2"</span>).<span class="Y">fadeOut</span>(<span class="O">"slow"</span>);
+    <span class="Y">$</span>(<span class="O">"#div3"</span>).<span class="Y">fadeOut</span>(<span class="L-g">3000</span>);
+});</pre>
+                <h3>jQuery fadeToggle() 方法</h3>
+                <p>jQuery fadeToggle() 方法可以在 fadeIn() 與 fadeOut() 方法之間進行切換。</p>
+                <p>如果元素已淡出，則 fadeToggle() 會向元素添加淡入效果。</p>
+                <p>如果元素已淡入，則 fadeToggle() 會向元素添加淡出效果。</p>
+                <div class="code"><span class="Y">$</span>(<span class="S-b">selector</span>).<span
+                    class="Y">fadeToggle</span>(<span class="S-b">speed</span>,<span class="S-b">callback</span>);</div>
+                <p>可選的 speed 參數規定效果的時長。它可以取以下值："slow"、"fast" 或毫秒。</p>
+                <p>可選的 callback 參數是 fading 完成後所執行的函數名稱。</p>
+                <p>下面的例子演示了帶有不同參數的 fadeToggle() 方法：</p>
+<pre><span class="Y">$</span>(<span class="O">"button"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"#div1"</span>).<span class="Y">fadeToggle</span>();
+    <span class="Y">$</span>(<span class="O">"#div2"</span>).<span class="Y">fadeToggle</span>(<span class="O">"slow"</span>);
+    <span class="Y">$</span>(<span class="O">"#div3"</span>).<span class="Y">fadeToggle</span>(<span class="L-g">3000</span>);
+});</pre>
+                <h3>jQuery fadeTo() 方法</h3>
+                <p>jQuery fadeTo() 方法允許漸變為給定的不透明度（值介於 0 與 1 之間）。</p>
+                <p>語法:</p>
+                <div class="code"><span class="Y">$</span>(<span class="S-b">selector</span>).<span
+                    class="Y">fadeTo</span>(<span class="S-b">speed</span>,<span class="S-b">opacity</span>,<span class="S-b">callback</span>);</div>
+                <p>必需的 speed 參數規定效果的時長。它可以取以下值："slow"、"fast" 或毫秒。</p>
+                <p>fadeTo() 方法中必需的 opacity 參數將淡入淡出效果設置為給定的不透明度（值介於 0 與 1 之間）。</p>
+                <p>可選的 callback 參數是該函數完成後所執行的函數名稱。</p>
+                <p>下面的例子演示了帶有不同參數的 fadeTo() 方法：</p>
+<pre><span class="Y">$</span>(<span class="O">"button"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"#div1"</span>).<span class="Y">fadeTo</span>(<span class="O">"slow"</span>,<span class="L-g">0.15</span>);
+    <span class="Y">$</span>(<span class="O">"#div2"</span>).<span class="Y">fadeTo</span>(<span class="O">"slow"</span>,<span class="L-g">0.4</span>);
+    <span class="Y">$</span>(<span class="O">"#div3"</span>).<span class="Y">fadeTo</span>(<span class="O">"slow"</span>,<span class="L-g">0.7</span>);
+});</pre>
             </section>
 
             <section class="others-section item-5">
