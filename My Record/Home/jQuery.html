@@ -464,6 +464,49 @@
 
             <section class="others-section item-5">
                 <h2 class="others-section-title"> jQuery 滑動</h2>
+                <h3>jQuery 滑動方法</h3>
+                <p>通過 jQuery，您可以在元素上創建滑動效果。</p>
+                <p>jQuery 擁有以下滑動方法：</p>
+                <ul>
+                    <li><span class="Y">slideDown</span>()</li>
+                    <li><span class="Y">slideUp</span>()</li>
+                    <li><span class="Y">slideToggle</span>()</li>
+                </ul>
+                <hr>
+                <h3>jQuery slideDown() 方法</h3>
+                <p>jQuery slideDown() 方法用於向下滑動元素。</p>
+                <p>語法:</p>
+                <div class="code"><span class="Y">$</span>(<span class="S-b">selector</span>).<span
+                    class="Y">slideDown</span>(<span class="S-b">speed</span>,<span class="S-b">callback</span>);</div>
+                    <p>可選的 speed 參數規定效果的時長。它可以取以下值："slow"、"fast" 或毫秒。</p>
+                    <p>可選的 callback 參數是滑動完成後所執行的函數名稱。</p>
+                    <p>下面的例子演示了 slideDown() 方法：</p>
+<pre><span class="Y">$</span>(<span class="O">"#flip"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"#panel"</span>).<span class="Y">slideDown</span>();
+});</pre>
+                <h3>jQuery slideUp() 方法</h3>
+                <p>jQuery slideUp() 方法用於向上滑動元素。</p>
+                <p>語法:</p>
+                <div class="code"><span class="Y">$</span>(<span class="S-b">selector</span>).<span
+                    class="Y">slideUp</span>(<span class="S-b">speed</span>,<span class="S-b">callback</span>);</div>
+                    <p>可選的 speed 參數規定效果的時長。它可以取以下值："slow"、"fast" 或毫秒。</p>
+                    <p>可選的 callback 參數是滑動完成後所執行的函數名稱。</p>
+                    <p>下面的例子演示了 slideUp() 方法：</p>
+<pre><span class="Y">$</span>(<span class="O">"#flip"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"#panel"</span>).<span class="Y">slideUp</span>();
+});</pre>
+                <h3>jQuery slideToggle() 方法</h3>
+                <p>jQuery slideToggle() 方法可以在 slideDown() 與 slideUp() 方法之間進行切換。</p>
+                <p>如果元素向下滑動，則 slideToggle() 可向上滑動它們。</p>
+                <p>如果元素向上滑動，則 slideToggle() 可向下滑動它們。</p>
+                <div class="code"><span class="Y">$</span>(<span class="S-b">selector</span>).<span
+                    class="Y">slideToggle</span>(<span class="S-b">speed</span>,<span class="S-b">callback</span>);</div>
+                    <p>可選的 speed 參數規定效果的時長。它可以取以下值："slow"、"fast" 或毫秒。</p>
+                    <p>可選的 callback 參數是滑動完成後所執行的函數名稱。</p>
+                    <p>下面的例子演示了 slideToggle() 方法：</p>
+<pre><span class="Y">$</span>(<span class="O">"#flip"</span>).<span class="Y">click</span>(<span class="B">function</span>(){
+    <span class="Y">$</span>(<span class="O">"#panel"</span>).<span class="Y">slideToggle</span>();
+});</pre>
             </section>
 
             <section class="others-section item-6">

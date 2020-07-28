@@ -10,7 +10,7 @@ $(document).ready(function(){   //文檔就緒
         $('.' + id).show();           //對應class id顯示右邊內容          
         $('.' + id).siblings().hide();//對應class id隱藏右邊兄弟內容
         $(this).siblings().css('box-shadow', '');                   //.items兄弟的box-shadow改為原值
-        $('.active-li').css('box-shadow', 'none');                  //.active-li的box-shadow改為none
+        $('.active-li').removeClass("active-li");                   //移除.active-li
         $(this).css('box-shadow', 'inset -3px 0 6px 6px #5b9ef0');  //更改.items的box-shadow
     });
 
