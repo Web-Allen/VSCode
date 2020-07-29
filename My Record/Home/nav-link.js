@@ -19,6 +19,6 @@ document.write("                            alt=\"MDN Web Docs\"> MDN Web Docs<\
 document.write("                    <a href=\"https:\/\/caniuse.com\/\" target=\"_blank\"><img src=\"https:\/\/caniuse.com\/img\/favicon-128.png\"");
 document.write("                            alt=\"Can I use\"> Can I use<\/a>");
 document.write("                    <a href=\"https:\/\/fontawesome.com\/\" target=\"_blank\"><img src=\"https:\/\/fontawesome.com\/images\/favicons\/favicon-16x16.png\"");
-document.write("                            alt=\"Can I use\"> Font Awesome<\/a>");
+document.write("                            alt=\"Font Awesome\"> Font Awesome<\/a>");
 document.write("                <\/div>");
 document.write("            <\/div>");
