@@ -407,6 +407,10 @@ h3 {
         margin-top: 2rem;
     }
 
+    .button {
+        display: none;
+    }
+
     #block_2 {
         grid-template-columns: 1fr;
     }
