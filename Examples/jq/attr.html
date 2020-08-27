@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <style>
+            
+        </style>
+    <title>attr</title>
+    <script>
+        /* 
+            attr 設置和修改屬性
+         */
+         $(function(){
+/*              alert($("#div1").attr("id"));
+             alert($("#div1").attr("title"));
+             alert($("#div1").attr("class")); */
+
+             //設置屬性直
+/*              $("#div1").attr("title", 'world');
+             $("#div1").attr("class", 'box22'); */
+
+             //一次性修改多條屬性
+             $("#div1").attr({
+                 title: 'world',
+                 class: 'xxxx',
+                 yyy: 'zzz'
+             })
+         })
+    </script>
+</head>
+
+<body>
+    <div id="div1" title="hello" class="box"></div>
+</body>
+
+</html>

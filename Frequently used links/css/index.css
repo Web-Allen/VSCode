@@ -1,0 +1,20 @@
+.container {
+    display: flex;
+    width: 90%;
+    background-color: #343a40;
+    border-radius: 6px;
+    margin: 15px 0;
+    justify-content: space-around;
+}
+
+.container a {
+    width: 8%;
+    background-color: #9a9d9a2c;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.container a > img {
+    width: 100%;
+}
