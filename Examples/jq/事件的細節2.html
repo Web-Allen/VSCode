@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <style>
+            
+        </style>
+    <title>事件的細節2</title>
+    <script>
+        /* 
+            trigger() 主動觸發
+            ev.data
+            ev.target(兼容後觸發對象)
+            ev.type(輸出事件類型)
+         */
+
+         $(function(){
+/*              $("button").click(function(ev){
+                 alert(ev.type);
+                 alert(ev.target);
+             }) */
+
+             //配合on使用
+/*              $("button").on("click", {username: "鋼鐵", age: 18}, function(ev){
+                 alert(ev.data); //拿到傳入參數
+                 alert(ev.data.username);
+                 alert(ev.data.age);
+
+                 alert(1);
+             }) */
+
+/*              $("button").on("click", function(){
+                 alert(1);
+             }) */
+
+             //trigger()可以觸發官方定義的事件外,還可以觸發我們定義的事件
+
+             /* $("button").trigger("click"); */
+
+             $("#play").on("play", function(){
+                 alert("開始播放");
+             })
+             $("#play").on("next", function(){
+                 alert("切換");
+             })
+             $("button").eq(0).click(function(){
+                 $("#play").trigger("play");
+             })
+             $("button").eq(1).click(function(){
+                 $("#play").trigger("next");
+             })
+         })
+    </script>
+</head>
+
+<body>
+    <button>播放</button>
+    <button>切換</button>
+    <div id="play"></div>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <style>
+            
+        </style>
+    <title>自動數據類型轉換</title>
+    <script>
+        /* 
+            代碼規範:
+            1.注意層級縮進 tab = 四個空格            
+            2.; , 後面都跟一個空格 運算符 
+            3.= + 前後都空格
+            4.每一條語句後面都必須添加 ; 分號
+         */        
+        /* 
+        1.任何類型的數據和字符串類型數據做相加操作的時候，其他數據類型會自動轉換成字符串類型，字符串拼接。此時的相加操作不再是數學意義上的加法，而是表示拼接的意思。
+        2.任何數據除了和字符串做相加運算外,要先將字符串轉成數字再進行運算。
+        與NaN做算術運算的結果始終都是NaN,包括NaN本身和NaN做運算結果也為NaN。
+        字符串如果是純數字字符串轉成數字,否則轉換成NaN
+         */
+/*         var a ="你" + "好";
+        var b = "1" + 1;
+        var c = "1" + true;
+        var d = "1" + undefined;
+        alert(typeof d); */
+
+/*         var a = 1 - "2";//-1 字符串"2" 轉成了數字2 */
+        var a = 1 - "2a"; //NaN not a number "2a"轉成數字NaN
+        alert(a);
+    </script>
+</head>
+
+<body>
+    
+</body>
+
+</html>

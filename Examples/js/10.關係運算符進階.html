@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <style>
+            
+        </style>
+    <title>關係運算符進階</title>
+    <script>
+        /* 
+        關係運算符：
+        在等於和不等於比較上，如果操作數為非數值，則遵從以下規律：
+        1.一個操作數為布爾值，則比較之前將其轉換成數值，false轉成0、true轉成1。
+        2.一個操作數為字符串，則比較之前將其轉成數值再進行比較
+        3.一個操作數為NaN，則==返回false，!=返回true，並且NaN和NaN自身不等
+        4.在全等和全不等，如果值和類型都相等，才返回true；否則返回false
+         */
+
+         alert(1 == true); //true
+
+         alert(0 == false); //true
+
+         alert(20 == "20"); //true
+
+         alert(1 != NaN); //true
+
+         alert(NaN != NaN) //true
+
+         alert(20 === "20"); //false
+
+         alert(20 === Number("20")); //true
+    </script>
+</head>
+
+<body>
+    
+</body>
+
+</html>
